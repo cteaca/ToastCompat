@@ -63,7 +63,7 @@ public final class ToastCompat extends Toast {
    * {@link #LENGTH_LONG}
    * @throws Resources.NotFoundException if the resource can't be found.
    */
-  public static Toast makeText(Context context, @StringRes int resId, int duration)
+  public static ToastCompat makeText(Context context, @StringRes int resId, int duration)
       throws Resources.NotFoundException {
     return makeText(context, context.getResources().getText(resId), duration);
   }
